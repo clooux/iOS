@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BAA3D912B20E8F7005CD041 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA3D902B20E8F7005CD041 /* TaskView.swift */; };
+		0BAA3D972B20EA6C005CD041 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA3D962B20EA6C005CD041 /* TaskModel.swift */; };
 		0BE9D5842B1A608E0035F198 /* Week2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE9D5832B1A608E0035F198 /* Week2App.swift */; };
 		0BE9D5862B1A608E0035F198 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE9D5852B1A608E0035F198 /* ContentView.swift */; };
 		0BE9D5882B1A60900035F198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE9D5872B1A60900035F198 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BAA3D902B20E8F7005CD041 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		0BAA3D962B20EA6C005CD041 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		0BE9D5802B1A608E0035F198 /* Week2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE9D5832B1A608E0035F198 /* Week2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week2App.swift; sourceTree = "<group>"; };
 		0BE9D5852B1A608E0035F198 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 				0BE9D5852B1A608E0035F198 /* ContentView.swift */,
 				0BE9D5872B1A60900035F198 /* Assets.xcassets */,
 				0BE9D5892B1A60900035F198 /* Preview Content */,
+				0BAA3D902B20E8F7005CD041 /* TaskView.swift */,
+				0BAA3D962B20EA6C005CD041 /* TaskModel.swift */,
 			);
 			path = Week2;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BAA3D912B20E8F7005CD041 /* TaskView.swift in Sources */,
 				0BE9D5862B1A608E0035F198 /* ContentView.swift in Sources */,
+				0BAA3D972B20EA6C005CD041 /* TaskModel.swift in Sources */,
 				0BE9D5842B1A608E0035F198 /* Week2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
