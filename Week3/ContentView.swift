@@ -10,43 +10,73 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+    
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Product.name, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item>
-
+    private var products: FetchedResults<Product>
+    
+    @State private var num = 10
+    @State private var selectedTab = "Products"
+    @State var cart: [Product] = []
+    
+    
     var body: some View {
-        NavigationView {
+        TabView(selection: $selectedTab) {
+            NavigationView {
+                List {
+                    ForEach(products) { product in
+                        NavigationLink {
+                            VStack{
+                                Text("\(product.name!)")
+                                Button(){
+                                    cart.append(product)
+                                } label: {
+                                    Label("Add to Cart", systemImage: "plus")
+                                }
+                            }
+                        } label: {
+                            Text(product.name!)
+                        }
+                    }
+                    .onDelete(perform: deleteItems)
+                    
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        EditButton()
+                    }
+                    ToolbarItem {
+                        Button(action: addItem) {
+                            Label("Add Item", systemImage: "plus")
+                        }
+                    }
+                }
+                Text("Select an item")
+            }
+            .tabItem {
+                Label("Products", systemImage: "square.fill.text.grid.1x2")
+            }
+            .tag("Products")
+            
             List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+                ForEach(cart) { item in
+                    Text(item.name!)
                 }
             }
-            Text("Select an item")
+            .tabItem {
+                Label("Cart", systemImage: "cart")
+            }
+            .tag("Cart")
         }
     }
-
+    
     private func addItem() {
         withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
+            let newProduct = Product(context: viewContext)
+            newProduct.name = "Product" + String(num)
+            num += 1
+            
             do {
                 try viewContext.save()
             } catch {
@@ -57,11 +87,11 @@ struct ContentView: View {
             }
         }
     }
-
+    
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
+            offsets.map { products[$0] }.forEach(viewContext.delete)
+            
             do {
                 try viewContext.save()
             } catch {
@@ -73,13 +103,6 @@ struct ContentView: View {
         }
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 #Preview {
     ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
