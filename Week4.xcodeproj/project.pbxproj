@@ -13,6 +13,8 @@
 		0BF35EA52B40AF9500B60706 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF35EA42B40AF9500B60706 /* Preview Assets.xcassets */; };
 		0BF35EA72B40AF9500B60706 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF35EA62B40AF9500B60706 /* Persistence.swift */; };
 		0BF35EAA2B40AF9500B60706 /* Week4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BF35EA82B40AF9500B60706 /* Week4.xcdatamodeld */; };
+		0BF35EB12B40B79500B60706 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF35EB02B40B79500B60706 /* CategoryView.swift */; };
+		0BF35EB52B40B8A300B60706 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF35EB42B40B8A300B60706 /* ProductView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		0BF35EA42B40AF9500B60706 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BF35EA62B40AF9500B60706 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0BF35EA92B40AF9500B60706 /* Week4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Week4.xcdatamodel; sourceTree = "<group>"; };
+		0BF35EB02B40B79500B60706 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		0BF35EB42B40B8A300B60706 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				0BF35EA62B40AF9500B60706 /* Persistence.swift */,
 				0BF35EA82B40AF9500B60706 /* Week4.xcdatamodeld */,
 				0BF35EA32B40AF9500B60706 /* Preview Content */,
+				0BF35EB02B40B79500B60706 /* CategoryView.swift */,
+				0BF35EB42B40B8A300B60706 /* ProductView.swift */,
 			);
 			path = Week4;
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 				0BF35EA02B40AF9400B60706 /* ContentView.swift in Sources */,
 				0BF35EAA2B40AF9500B60706 /* Week4.xcdatamodeld in Sources */,
 				0BF35E9E2B40AF9400B60706 /* Week4App.swift in Sources */,
+				0BF35EB52B40B8A300B60706 /* ProductView.swift in Sources */,
+				0BF35EB12B40B79500B60706 /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
