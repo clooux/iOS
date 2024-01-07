@@ -11,6 +11,9 @@
 		0BF99FD42B4B1D1B0026ED0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF99FD32B4B1D1B0026ED0A /* ContentView.swift */; };
 		0BF99FD62B4B1D1E0026ED0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF99FD52B4B1D1E0026ED0A /* Assets.xcassets */; };
 		0BF99FD92B4B1D1E0026ED0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF99FD82B4B1D1E0026ED0A /* Preview Assets.xcassets */; };
+		0BF99FE02B4B1DD70026ED0A /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF99FDF2B4B1DD70026ED0A /* Authentication.swift */; };
+		0BF99FE22B4B24290026ED0A /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF99FE12B4B24290026ED0A /* UserView.swift */; };
+		0BF99FE42B4B24460026ED0A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF99FE32B4B24460026ED0A /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		0BF99FD32B4B1D1B0026ED0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BF99FD52B4B1D1E0026ED0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BF99FD82B4B1D1E0026ED0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BF99FDF2B4B1DD70026ED0A /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		0BF99FE12B4B24290026ED0A /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		0BF99FE32B4B24460026ED0A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 				0BF99FD32B4B1D1B0026ED0A /* ContentView.swift */,
 				0BF99FD52B4B1D1E0026ED0A /* Assets.xcassets */,
 				0BF99FD72B4B1D1E0026ED0A /* Preview Content */,
+				0BF99FDF2B4B1DD70026ED0A /* Authentication.swift */,
+				0BF99FE12B4B24290026ED0A /* UserView.swift */,
+				0BF99FE32B4B24460026ED0A /* LoginView.swift */,
 			);
 			path = Week5;
 			sourceTree = "<group>";
@@ -139,6 +148,9 @@
 			files = (
 				0BF99FD42B4B1D1B0026ED0A /* ContentView.swift in Sources */,
 				0BF99FD22B4B1D1B0026ED0A /* Week5App.swift in Sources */,
+				0BF99FE02B4B1DD70026ED0A /* Authentication.swift in Sources */,
+				0BF99FE42B4B24460026ED0A /* LoginView.swift in Sources */,
+				0BF99FE22B4B24290026ED0A /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

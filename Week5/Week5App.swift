@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Week5App: App {
+    @StateObject var auth = Authentication()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(auth)
         }
     }
 }
